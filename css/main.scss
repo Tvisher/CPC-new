@@ -275,3 +275,157 @@ body {
   padding-top: 20px;
   padding-bottom: 130px;
 }
+
+.slider-news {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 620px;
+}
+
+.slider-news__content {
+  background-color: #fff;
+  padding: 36px 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-news__head {
+  width: 100%;
+  padding-bottom: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.news-date {
+  color: #212732;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.news-tag {
+  color: #212732;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  border-radius: 24px;
+  background: #eee;
+  padding: 4px 12px;
+}
+
+.news-location {
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  color: #212732;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  padding: 4px 12px;
+  padding-left: 28px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.7143 13.6786L11.1785 17.2144C10.866 17.5266 10.4423 17.702 10.0006 17.702C9.55885 17.702 9.13518 17.5266 8.82267 17.2144L5.286 13.6786C4.35368 12.7462 3.71878 11.5583 3.46157 10.2651C3.20437 8.97195 3.33641 7.63152 3.841 6.41337C4.3456 5.19522 5.20008 4.15404 6.2964 3.42152C7.39272 2.68899 8.68164 2.298 10.0002 2.298C11.3187 2.298 12.6076 2.68899 13.7039 3.42152C14.8003 4.15404 15.6547 5.19522 16.1593 6.41337C16.6639 7.63152 16.796 8.97195 16.5388 10.2651C16.2816 11.5583 15.6466 12.7462 14.7143 13.6786Z' fill='%23DC403A'/%3e%3cpath d='M7.50017 8.96386C7.50017 9.62691 7.76356 10.2628 8.2324 10.7316C8.70124 11.2005 9.33712 11.4639 10.0002 11.4639C10.6632 11.4639 11.2991 11.2005 11.7679 10.7316C12.2368 10.2628 12.5002 9.62691 12.5002 8.96386C12.5002 8.30082 12.2368 7.66494 11.7679 7.1961C11.2991 6.72726 10.6632 6.46386 10.0002 6.46386C9.33712 6.46386 8.70124 6.72726 8.2324 7.1961C7.76356 7.66494 7.50017 8.30082 7.50017 8.96386Z' fill='white'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left 6px center;
+}
+
+.slider-news__image {
+  width: 620px;
+  flex-shrink: 0;
+  height: auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.site-container {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.first-screen__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: background-image 0.3s ease-in-out;
+  transition: background-image 0.3s ease-in-out;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 39, 50, 0.2);
+    backdrop-filter: blur(24px);
+  }
+}
+
+.first-screen {
+  position: relative;
+}
+
+.first-screen__slider {
+  transform: translateY(-68px);
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+}
+
+.slider-news__title {
+  color: #212732;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%; /* 55.2px */
+  margin-bottom: 32px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.slider-news__text {
+  color: #60646b;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.slider-news__btn {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  border-radius: 40px;
+  background: #dc403a;
+  padding: 15px;
+  max-width: 240px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-top: auto;
+}
