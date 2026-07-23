@@ -379,6 +379,7 @@ body {
 
 .first-screen {
   position: relative;
+  padding-bottom: 38px;
 }
 
 .first-screen__slider {
@@ -386,6 +387,21 @@ body {
   overflow: visible;
   position: relative;
   z-index: 2;
+  .swiper-pagination {
+    bottom: -59px;
+    transform: none;
+    margin: 0;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .swiper-pagination-bullet {
+    flex-shrink: 0;
+    margin: 0 !important;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+  }
 }
 
 .slider-news__title {

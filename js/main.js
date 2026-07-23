@@ -15,6 +15,10 @@ const changeImage = (sliderEl) => {
 const mainSlider = new Swiper('.first-screen__slider', {
     spaceBetween: 40,
     speed: 800,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
     on: {
         init(swiper) {
             changeImage(swiper)
@@ -23,4 +27,5 @@ const mainSlider = new Swiper('.first-screen__slider', {
             changeImage(swiper)
         }
     }
+
 })
