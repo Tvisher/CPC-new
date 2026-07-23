@@ -319,9 +319,13 @@ body {
   border-radius: 24px;
   background: #eee;
   padding: 4px 12px;
+  display: block;
+  width: fit-content;
 }
 
 .news-location {
+  display: block;
+  width: fit-content;
   border-radius: 24px;
   border: 1px solid #ccc;
   color: #212732;
@@ -443,5 +447,123 @@ body {
   text-align: center;
   display: block;
   margin-left: auto;
+}
+
+.slider-news__footer {
   margin-top: auto;
+}
+
+.section-title {
+  margin-bottom: 48px;
+  color: #212732;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  span {
+    margin-top: 8px;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #ddd;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.articles-section {
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+
+.article-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 32px;
+}
+
+.article-item {
+  width: calc(25% - 24px);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 24px 0 rgba(177, 177, 177, 0.25);
+  overflow: hidden;
+}
+
+.article-item__image {
+  width: 100%;
+  position: relative;
+  height: 0;
+  padding-top: 64.85%;
+  overflow: hidden;
+}
+
+.article-item__image-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.article-item__content {
+  padding: 20px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.article-item__date {
+  color: #60646b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 6px;
+}
+
+.article-item__title {
+  color: #212732;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.article-item__descr {
+  color: #60646b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.article-item__footer {
+  margin-top: auto;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
