@@ -27,5 +27,33 @@ const mainSlider = new Swiper('.first-screen__slider', {
             changeImage(swiper)
         }
     }
-
 })
+
+
+// const header = document.querySelector('header.header');
+// const fixedHeader = document.querySelector('.fixed-header');
+
+// const checkWindowScroll = () => {
+//     if (window.scrollY > header.clientHeight) {
+//         fixedHeader.classList.add('show')
+//     } else {
+//         fixedHeader.classList.remove('show')
+//     }
+// }
+// checkWindowScroll()
+// document.addEventListener('scroll', (e) => checkWindowScroll())
+
+const header = document.querySelector('header.header');
+const fixedHeader = document.querySelector('.fixed-header');
+
+if (header && fixedHeader) {
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+            // Покажем fixedHeader, когда header полностью ушел с экрана
+            fixedHeader.classList.toggle('show', !entry.isIntersecting);
+        },
+        { threshold: 0 } // Реакция сразу при выходе элемента из Viewport
+    );
+
+    observer.observe(header);
+}
