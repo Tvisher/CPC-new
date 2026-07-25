@@ -408,6 +408,16 @@ body {
     height: 12px;
     background-color: #fff;
   }
+  .swiper-slide:first-child {
+    .prev-arrow svg {
+      opacity: 0.2;
+    }
+  }
+  .swiper-slide:last-child {
+    .next-arrow svg {
+      opacity: 0.2;
+    }
+  }
 }
 
 .slider-news__title {
