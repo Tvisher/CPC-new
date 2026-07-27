@@ -1230,4 +1230,29 @@ header,
       }
     }
   }
+
+  .slider-news__content {
+    padding-top: 16px;
+  }
+
+  .slider-news__head {
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 50px;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 35px;
+      height: 1px;
+      width: 100%;
+      background-color: #ccc;
+    }
+    .news-date {
+      color: #60646b;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
 }
