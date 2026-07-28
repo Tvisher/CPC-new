@@ -1348,6 +1348,12 @@ header,
   .left-menu__content {
     padding-top: 15px;
   }
+  .first-screen {
+    padding-bottom: 74px;
+  }
+  .first-screen__slider .swiper-pagination {
+    bottom: -42px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1358,5 +1364,8 @@ header,
   .show-more-btn {
     max-width: 100%;
     padding: 16px;
+  }
+  .container {
+    padding: 0px 16px;
   }
 }
