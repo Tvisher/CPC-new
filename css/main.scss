@@ -111,6 +111,9 @@ body {
   display: flex;
   gap: 0.375rem;
   align-items: center;
+  &._mob {
+    display: none;
+  }
 }
 
 .lang-item {
@@ -162,6 +165,9 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
+  }
+  &._mob {
+    display: none;
   }
 }
 
@@ -835,12 +841,16 @@ body.menu-open {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   gap: 0.125rem;
   span {
     width: 0.75rem;
     height: 0.125rem;
     background-color: #fff;
     display: block;
+  }
+  &._mob {
+    display: none;
   }
 }
 
@@ -907,6 +917,8 @@ main {
   visibility: hidden;
   transform: translateX(-4.5rem);
   transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
   &.open {
     opacity: 1;
     visibility: visible;
@@ -1147,6 +1159,47 @@ header,
     width: 100%;
     height: 50vw;
   }
+  .left-menu__btn._mob {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .left-menu__content {
+    left: 0;
+    padding: 20px;
+  }
+
+  .header-langs._mob {
+    display: flex;
+    margin-left: 0;
+    margin-top: auto;
+    padding-top: 20px;
+    gap: 10px;
+    .lang-item {
+      padding: 12px;
+      justify-content: center;
+      width: calc(50% - 5px);
+      font-weight: 800;
+      color: #212732;
+      background: rgba(33, 39, 50, 0.25);
+      &.active {
+        background: rgba(33, 39, 50, 0.5);
+      }
+    }
+  }
+  .header-search._mob {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+    border-color: rgba(33, 39, 50, 0.5);
+    svg path {
+      stroke: rgba(33, 39, 50, 0.5);
+    }
+    .search-input {
+      color: #212732;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -1254,5 +1307,36 @@ header,
       bottom: 0;
       left: 0;
     }
+  }
+  .fixed-header {
+    padding: 15px 0;
+  }
+
+  .left-menu__content {
+    width: 100%;
+    max-width: 80vw;
+  }
+  .nav-menu {
+    padding-top: 20px;
+  }
+  .nav-menu__link {
+    font-size: 18px;
+  }
+  .nav-menu__list {
+    gap: 15px;
+  }
+  .nav-menu__sublink {
+    font-size: 16px;
+  }
+  .nav-menu__submenu {
+    padding-top: 15px;
+    padding-left: 10px;
+    gap: 10px;
+  }
+  .left-menu__logos {
+    padding-bottom: 15px;
+  }
+  .left-menu__content {
+    padding-top: 15px;
   }
 }

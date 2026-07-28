@@ -40,10 +40,13 @@ document.addEventListener('click', e => {
         bodyEl.classList.remove('menu-open');
         return
     }
-    if (target.closest('.left-menu')) {
+    if (target.closest('.left-menu') || target.closest('.left-menu__btn._mob')) {
         leftMenu.classList.toggle('open');
         leftMenuInner.classList.toggle('open');
         bodyEl.classList.toggle('menu-open');
+        if (leftMenu.classList.contains('open')) {
+            history.pushState({ menuOpen: true }, '');
+        }
         return
     }
 
@@ -78,4 +81,17 @@ $(".nav-menu__item .open-arrow").on("click", function () {
     const innerMenu = $(this).parents('.nav-menu__item').find('.nav-menu__submenu-wrapper');
     $(this).toggleClass('open')
     innerMenu.slideToggle("slow", function () { });
+});
+
+
+window.addEventListener('popstate', function (event) {
+    const openedMemu = document.querySelector('.left-menu__content.open');
+    if (openedMemu) {
+        leftMenu.classList.remove('open');
+        leftMenuInner.classList.remove('open');
+        bodyEl.classList.remove('menu-open');
+        if (history.state && history.state.menuOpen) {
+            history.back();
+        }
+    }
 });
