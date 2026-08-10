@@ -95,3 +95,17 @@ window.addEventListener('popstate', function (event) {
         }
     }
 });
+
+
+
+
+$(document).ready(function () {
+    $('.select-item').each(function () {
+        const placeholder = $(this).attr('placeholder');
+        $(this).select2({
+            minimumResultsForSearch: -1,
+            placeholder: placeholder
+        });
+    })
+
+});
