@@ -29,6 +29,7 @@ const mainSlider = new Swiper('.first-screen__slider', {
         }
     }
 });
+
 const leftMenuInner = document.querySelector('.left-menu__content');
 const bodyEl = document.querySelector('body');
 const leftMenu = document.querySelector('.left-menu');
@@ -151,3 +152,22 @@ if (resetFilter) {
 function submitFilters() {
     console.log(filterParams);
 }
+
+
+
+const articleSlider = new Swiper('.article-content__slider-el', {
+    spaceBetween: 40,
+    slidesPerView: 1,
+    speed: 800,
+    loop: 1,
+    pagination: {
+        el: '.article-content__slider-el .swiper-pagination',
+        type: 'bullets',
+        clickable: 1
+    },
+    navigation: {
+        nextEl: '.article-content__slider-el .swiper-button-next',
+        prevEl: '.article-content__slider-el .swiper-button-prev',
+    },
+
+});
