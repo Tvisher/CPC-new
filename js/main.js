@@ -98,14 +98,56 @@ window.addEventListener('popstate', function (event) {
 
 
 
-
+const filterParams = {}
 $(document).ready(function () {
     $('.select-item').each(function () {
         const placeholder = $(this).attr('placeholder');
+        filterParams[`${$(this).attr('name')}`] = '';
         $(this).select2({
             minimumResultsForSearch: -1,
             placeholder: placeholder
         });
-    })
 
+        $(this).on('select2:select', function (e) {
+            filterParams[`${$(this).attr('name')}`] = e.target.value;
+            submitFilters()
+        });
+    })
 });
+
+const datePicker = new AirDatepicker('.datepicker-range', {
+    isMobile: true,
+    autoClose: true,
+    range: true,
+    multipleDatesSeparator: ' - ',
+    onSelect({ formattedDate }) {
+        if (formattedDate.length > 1) {
+            filterParams.date = formattedDate;
+            submitFilters()
+        }
+    }
+});
+if (datePicker) {
+    filterParams.date = [];
+}
+
+const resetFilter = document.querySelector('.filter-reset');
+if (resetFilter) {
+    resetFilter.addEventListener('click', (e) => {
+        if (datePicker) {
+            datePicker.clear();
+        }
+        $('.select-item').val(null).trigger('change');
+
+        Object.keys(filterParams).forEach(key => {
+            filterParams[key] = key === 'date' ? [] : '';
+        });
+
+        submitFilters()
+    })
+}
+
+
+function submitFilters() {
+    console.log(filterParams);
+}

@@ -778,6 +778,7 @@ body {
 .main-wrapper {
   padding-left: 4.5rem;
   position: relative;
+  background-color: #fff;
   &::before {
     position: absolute;
     left: 0;
@@ -1085,12 +1086,14 @@ header,
 .filters-list {
   display: flex;
   gap: 20px;
+  align-items: center;
   margin-bottom: 48px;
+  flex-wrap: wrap;
 }
 
 .filter-item {
   width: 340px;
-
+  height: 56px;
   .select2 {
     width: 100% !important;
   }
@@ -1104,10 +1107,11 @@ header,
     padding-right: 52px;
   }
   .select2-selection__rendered {
+    font-size: 16px;
     padding: 0 !important;
-    color: #212732;
+    color: #212732 !important;
     font-weight: 500;
-    line-height: 150%;
+    line-height: 150% !important;
   }
   .select2-container--default
     .select2-selection--single
@@ -1116,7 +1120,7 @@ header,
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%;
+    line-height: 150% !important;
   }
 
   .select2-container--default.select2-container--open.select2-container--below
@@ -1146,4 +1150,191 @@ header,
   }
 }
 
+.select2-dropdown {
+  border-radius: 0 0 28px 28px !important;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 4px 24px 0 rgba(177, 177, 177, 0.25);
+  overflow: hidden;
+  border: none;
+}
+.select2-results__option {
+  padding: 15px 24px;
+  border-top: 1px solid #ccc;
+  color: #212732;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 500px !important;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background: rgba(19, 67, 149, 0.8) !important;
+  color: #fff;
+}
+
+.select2-results__option--highlighted.select2-results__option--selectable {
+  border-top: 1px solid #134395;
+  background: #134395 !important;
+  color: #fff;
+}
+
+.datepicker-range__wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 72px;
+  background: #fff;
+  box-shadow: 0 4px 24px 0 rgba(177, 177, 177, 0.25);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: right 16px center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M16 3V7M8 3V7M4 11H20M4 7C4 6.46957 4.21071 5.96086 4.58579 5.58579C4.96086 5.21071 5.46957 5 6 5H18C18.5304 5 19.0391 5.21071 19.4142 5.58579C19.7893 5.96086 20 6.46957 20 7V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V7ZM8 15H10V17H8V15Z' stroke='%23212732' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+}
+
+.datepicker-range {
+  padding: 16px 20px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: #212732;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.air-datepicker-body--day-name {
+  font-weight: 600;
+}
+.air-datepicker--content,
+.air-datepicker-nav {
+  padding: 10px;
+}
+.air-datepicker {
+  border-radius: 16px;
+  --adp-day-name-color: #273e82;
+  --adp-cell-background-color-selected: #dc403a;
+  --adp-background-color-selected-other-month: #dc403a;
+  --adp-background-color-selected-other-month-focused: #273e82;
+  --adp-cell-background-color-selected-hover: #273e82;
+}
+
+.filter-reset {
+  color: #60646b;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 12%; /* 1.92px */
+  text-underline-offset: 20%; /* 3.2px */
+  cursor: pointer;
+}
+
+.article-page__head {
+  max-width: 1200px;
+  width: 100%;
+}
+
+._article-page {
+  padding-bottom: 36px;
+  background-color: #f4f4f4;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 72px;
+    height: 100%;
+    content: "";
+    transform: translateX(-100%);
+    background-color: #f4f4f4;
+  }
+}
+
+.article-image {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 60%;
+  border-radius: 24px;
+  overflow: hidden;
+  .article-image__wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+.article-item__info {
+  padding-top: 33px;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+
+  .news-tag {
+    background: #ddd;
+  }
+  .news-date {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-left: 20px;
+    margin-right: 8px;
+  }
+
+  .info-text {
+    color: #212732;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
+
+.article-content-section {
+  padding-top: 72px;
+  padding-bottom: 96px;
+  color: #212732;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%;
+  background-color: #fff;
+}
+
+.article-content__inner {
+  max-width: 960px;
+  width: 100%;
+  margin-left: 110px;
+
+  display: flex;
+  flex-direction: column;
+  h4 {
+    color: #212732;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 170%;
+    margin-bottom: 40px;
+  }
+  p {
+    margin-bottom: 40px;
+  }
+}
 // @import "./media.scss";

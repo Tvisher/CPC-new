@@ -297,214 +297,89 @@
                 </div>
             </header>
             <main>
-                <section class="articles-section">
+                <section class="articles-section _article-page">
                     <div class="container">
-                        <ul class="breadcrumbs">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Что нового</a></li>
-                        </ul>
-                        <h2 class="section-title">
-                            Что нового
-                        </h2>
-                        <div class="filters-list">
-                            <div class="filter-item">
-                                <select name="theme" placeholder="Тема" class="select-item">
-                                    <option></option>
-                                    <option value="Тема номер 1">Тема номер 1</option>
-                                    <option value="Тема номер 2">Очень длинный текст который не войдёт в одну строку
-                                    </option>
-                                    <option value="Тема номер 3">Тема номер 3</option>
-                                </select>
-                            </div>
-
-                            <div class="filter-item">
-                                <select name="region" placeholder="Регион" class="select-item">
-                                    <option></option>
-                                    <option value="Центральный">Центральный</option>
-                                    <option value="Северо-Западный">Северо-Западный</option>
-                                    <option value="Южный">Южный</option>
-                                    <option value="Северо-Кавказский">Северо-Кавказский</option>
-                                    <option value="Приволжский">Приволжский</option>
-                                    <option value="Уральский">Уральский</option>
-                                    <option value="Сибирский">Сибирский</option>
-                                    <option value="Дальневосточный">Дальневосточный</option>
-                                </select>
-                            </div>
-
-                            <div class="filter-item">
-                                <div class="datepicker-range__wrapper">
-                                    <input type="text" readonly placeholder="Дата публикации" class="datepicker-range">
+                        <div class="article-page__head">
+                            <ul class="breadcrumbs">
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Что нового</a></li>
+                                <li><a href="#">От добычи до нефтепереработки</a></li>
+                            </ul>
+                            <h2 class="section-title">
+                                От добычи до нефтепереработки
+                            </h2>
+                            <div class="article-image">
+                                <div class="article-image__wrapper">
+                                    <img src="./img/slide-image-1.jpg" alt="">
                                 </div>
                             </div>
 
-                            <div class="filter-reset">Очистить все</div>
+                            <div class="article-item__info">
+                                <a href="#" target="_blank" class="news-tag">#О нефтепроводе</a>
+                                <a href="#" target="_blank" class="news-location">Новороссийск</a>
+                                <div class="news-date">19.05.2026</div>
+                                <div class="info-text">Автор: Илья Архипов, Дмитрий Константинов</div>
+                            </div>
                         </div>
-                        <div class="articles">
-                            <article class="article-item">
-                                <a href="#" class="article-item__image">
-                                    <div class="article-item__image-wrapper">
-                                        <img src="./img/slide-image-1.jpg" alt="">
-                                    </div>
-                                </a>
-                                <div class="article-item__content">
-                                    <div class="article-item__date">01.01.2026</div>
-                                    <a href="#" class="article-item__title">Новая реальность</a>
-                                    <a href="#" class="article-item__descr">О таких экзотических горных спортивных
-                                        активностях,
-                                        как виа феррата и спелеотуризм, рассказвает Инесса Бажина, ведущий специалист по
-                                        кадровым вопросам МТ</a>
-                                    <div class="article-item__footer">
-                                        <a href="#" class="news-tag">#О людях</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="article-item">
-                                <a href="#" class="article-item__image">
-                                    <div class="article-item__image-wrapper">
-                                        <img src="./img/slide-image-1.jpg" alt="">
-                                    </div>
-                                </a>
-                                <div class="article-item__content">
-                                    <div class="article-item__date">01.01.2026</div>
-                                    <a href="#" class="article-item__title">Уверенность в каждом литре</a>
-                                    <a href="#" class="article-item__descr">С момента ввода в эксплуатацию на Морском
-                                        терминале
-                                        КТК трех систем измерения количества и показателей качества нефти прошло три
-                                        года. О качестве работы новых СИКН рассказывают специалисты Отдела по
-                                        транспортировке нефти и коммерции</a>
-                                    <div class="article-item__footer">
-                                        <a href="#" class="news-tag">#О нефтепроводе</a>
-                                        <a href="#" class="news-location">Новороссийск</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="article-item">
-                                <a href="#" class="article-item__image">
-                                    <div class="article-item__image-wrapper">
-                                        <img src="./img/slide-image-1.jpg" alt="">
-                                    </div>
-                                </a>
-                                <div class="article-item__content">
-                                    <div class="article-item__date">01.01.2026</div>
-                                    <a href="#" class="article-item__title">Об объеме работ в ходе плановой остановки
-                                        (8-10 апреля 2026)</a>
-                                    <a href="#" class="article-item__descr">10 апреля 2026 года после 72-часовой
-                                        плановой
-                                        остановки запущена в работу нефтепроводная система Каспийского Трубопроводного
-                                        Консорциума</a>
-                                    <div class="article-item__footer">
-                                        <a href="#" class="news-tag">#О нефтепроводе</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="article-item">
-                                <a href="#" class="article-item__image">
-                                    <div class="article-item__image-wrapper">
-                                        <img src="./img/slide-image-1.jpg" alt="">
-                                    </div>
-                                </a>
-                                <div class="article-item__content">
-                                    <div class="article-item__date">01.01.2026</div>
-                                    <a href="#" class="article-item__title">Творческое единство</a>
-                                    <a href="#" class="article-item__descr">Продолжаем рассказ о театрах и других
-                                        центрах
-                                        культуры и искусства в регионах присутствия КТК. О Калмыцкой государственной
-                                        филармонии имени А. Н. Манджиева, ее музыкантах, спектаклях и планах мы беседуем
-                                        с генеральным директором этого учреждения, народной артисткой Республики
-                                        Калмыкия Анной Очкаевой</a>
-                                    <div class="article-item__footer">
-                                        <a href="#" class="news-tag">#О нефтепроводе</a>
-                                        <a href="#" class="news-location">Астана</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="article-item">
-                                <a href="#" class="article-item__image">
-                                    <div class="article-item__image-wrapper">
-                                        <img src="./img/slide-image-1.jpg" alt="">
-                                    </div>
-                                </a>
-                                <div class="article-item__content">
-                                    <div class="article-item__date">01.01.2026</div>
-                                    <a href="#" class="article-item__title">Новая реальность</a>
-                                    <a href="#" class="article-item__descr">О таких экзотических горных спортивных
-                                        активностях,
-                                        как виа феррата и спелеотуризм, рассказвает Инесса Бажина, ведущий специалист по
-                                        кадровым вопросам МТ</a>
-                                    <div class="article-item__footer">
-                                        <a href="#" class="news-tag">#О людях</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="article-item">
-                                <a href="#" class="article-item__image">
-                                    <div class="article-item__image-wrapper">
-                                        <img src="./img/slide-image-1.jpg" alt="">
-                                    </div>
-                                </a>
-                                <div class="article-item__content">
-                                    <div class="article-item__date">01.01.2026</div>
-                                    <a href="#" class="article-item__title">Уверенность в каждом литре</a>
-                                    <a href="#" class="article-item__descr">С момента ввода в эксплуатацию на Морском
-                                        терминале
-                                        КТК трех систем измерения количества и показателей качества нефти прошло три
-                                        года. О качестве работы новых СИКН рассказывают специалисты Отдела по
-                                        транспортировке нефти и коммерции</a>
-                                    <div class="article-item__footer">
-                                        <a href="#" class="news-tag">#О нефтепроводе</a>
-                                        <a href="#" class="news-location">Новороссийск</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="article-item">
-                                <a href="#" class="article-item__image">
-                                    <div class="article-item__image-wrapper">
-                                        <img src="./img/slide-image-1.jpg" alt="">
-                                    </div>
-                                </a>
-                                <div class="article-item__content">
-                                    <div class="article-item__date">01.01.2026</div>
-                                    <a href="#" class="article-item__title">Об объеме работ в ходе плановой остановки
-                                        (8-10 апреля 2026)</a>
-                                    <a href="#" class="article-item__descr">10 апреля 2026 года после 72-часовой
-                                        плановой
-                                        остановки запущена в работу нефтепроводная система Каспийского Трубопроводного
-                                        Консорциума</a>
-                                    <div class="article-item__footer">
-                                        <a href="#" class="news-tag">#О нефтепроводе</a>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="article-item">
-                                <a href="#" class="article-item__image">
-                                    <div class="article-item__image-wrapper">
-                                        <img src="./img/slide-image-1.jpg" alt="">
-                                    </div>
-                                </a>
-                                <div class="article-item__content">
-                                    <div class="article-item__date">01.01.2026</div>
-                                    <a href="#" class="article-item__title">Творческое единство</a>
-                                    <a href="#" class="article-item__descr">Продолжаем рассказ о театрах и других
-                                        центрах
-                                        культуры и искусства в регионах присутствия КТК. О Калмыцкой государственной
-                                        филармонии имени А. Н. Манджиева, ее музыкантах, спектаклях и планах мы беседуем
-                                        с генеральным директором этого учреждения, народной артисткой Республики
-                                        Калмыкия Анной Очкаевой</a>
-                                    <div class="article-item__footer">
-                                        <a href="#" class="news-tag">#О нефтепроводе</a>
-                                        <a href="#" class="news-location">Астана</a>
-                                    </div>
-                                </div>
-                            </article>
+                    </div>
+                </section>
+                <section class="article-content-section">
+                    <div class="container">
+                        <div class="article-content__inner">
+                            <h4>
+                                О геохимии ландшафтов, механизмах самоочищения природы, взаимодействии техносферы с
+                                биосферой «Панораме КТК» рассказывает заместитель директора Новороссийского
+                                политехнического института по научной работе, председатель комиссии по геохимии
+                                ландшафтов и техносферной безопасности Краснодарского регионального отделения РГО д. г.
+                                н. Владимир Дьяченко
+                            </h4>
+                            <p>
+                                - Павел Кириллович, скажите, как ответственный за научный сектор, насколько большой
+                                объем
+                                исследований сейчас выполняет главный нефтегазовый вуз страны? В чем этот объем
+                                измеряется?
+                                <br>
+                                <br>
+                                - Если говорить в общих чертах, то проще всего измерить в деньгах. Недавно мы преодолели
+                                «психологический рубеж» в один миллиард рублей, за два года добавив к показателям 20%.
+                                Такие
+                                доходы университет получает от хоздоговорной деятельности и бюджетной фундаментальной
+                                науки.
+                                Выполняем проектирование, инженерные изыскания, проводим лабораторные расчеты и так
+                                далее.
+                                Губкинский университет – отраслевой вуз, поэтому неудивительно, что 80% доходов
+                                поступает от
+                                производственных компаний.
+                                <br>
+                                <br>
+                                Еще один способ проанализировать наши объемы исследований – по количеству
+                                удовлетворенных
+                                заявок в Российском научном фонде, где происходит выделение бюджетных средств. За
+                                последние
+                                пять лет из 16 тыс. заявок по нефтегазовому направлению было одобрено 260, из них девять
+                                профинансированных – наши. По этому показателю мы находимся в верхней трети таблицы
+                                участников, но нам есть куда расти.
+                                <br>
+                                <br>
+                                Возможности регулярного бюджетного финансирования дает работа молодежных лабораторий.
+                                Сейчас
+                                у нас их три, это количество мы планируем удвоить.
+                                <br>
+                                <br>
+                                Среди недавних успехов Губкинского университета – получение премии Правительства
+                                Российской
+                                Федерации в области науки и техники. В Единый государственный перечень научных изданий –
+                                «Белый список» – включены все восемь научных журналов нашего вуза, публикующих основные
+                                результаты научных исследований наших и отраслевых специалистов.
+                                <br>
+                                <br>
+                                Возможности для дальнейшего улучшения результатов в сфере науки мы видим в
+                                консолидировании
+                                потенциала разных кафедр на наших наиболее сильных направлениях, чтобы соответствовать
+                                всем
+                                запросам государства.
+                            </p>
                         </div>
-                        <div class="show-more-btn">Показать еще</div>
                     </div>
                 </section>
             </main>
