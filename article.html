@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/select2.min.css" />
     <link rel="stylesheet" href="./css/air-datepicker.css" />
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/fancybox.css" />
 </head>
 
 <body>
@@ -310,7 +311,7 @@
                             </h2>
                             <div class="article-image">
                                 <div class="article-image__wrapper">
-                                    <img src="./img/slide-image-1.jpg" alt="">
+                                    <img src="./img/slide-image-1.jpg" alt="" data-fancybox="article-id">
                                 </div>
                             </div>
 
@@ -381,7 +382,7 @@
                             </p>
 
                             <div class="article-content__image">
-                                <img src="./img/slide-image-2.jpg" alt="">
+                                <img src="./img/slide-image-2.jpg" data-fancybox="article-id" alt="">
                                 <span>Проректор по научной работе РГУ нефти и газа (НИУ) им. И. М. Губкина, к. т. н.
                                     П.К. Калашников</span>
                             </div>
@@ -408,13 +409,15 @@
                                     <div class="article-content__slider-el swiper">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img src="./img/news-wide.jpg" alt="">
+                                                <img src="./img/news-wide.jpg" data-fancybox="article-slider-id" alt="">
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="./img/slide-image-1.jpg" alt="">
+                                                <img src="./img/slide-image-1.jpg" data-fancybox="article-slider-id"
+                                                    alt="">
                                             </div>
                                             <div class="swiper-slide">
-                                                <img src="./img/slide-image-2.jpg" alt="">
+                                                <img src="./img/slide-image-2.jpg" data-fancybox="article-slider-id"
+                                                    alt="">
                                             </div>
                                         </div>
                                         <div class="slider-nav">
@@ -529,6 +532,57 @@
                                     панацея, но амортизатор.
                                 </li>
                             </ul>
+
+                            <h2>Что может спасти ситуацию?</h2>
+                            <p>
+                                - И приборы внутритрубной диагностики, и тем более очистные устройства достаточно долго
+                                применяются в системах трубопроводного транспорта. Достигнут ли предел совершенства или
+                                существуют новые прорывные технологии в этом направлении?
+                            </p>
+                            <p>
+                                - Приборы внутритрубной диагностики проделали большой путь в развитии. Профилемеры,
+                                ультразвуковые и магнитные дефектоскопы стали эффективнее. Появились комбинированные
+                                приборы, совмещающие несколько видов диагностики в одном корпусе. Успешно решаются
+                                вопросы компактности, энергообеспечения, разнообразия и комбинации датчиков. С ростом
+                                вычислительной мощности в приборах нужно двигаться в сторону внедрения ИИ. С ним в
+                                процессе движения по участку трубопровода прибор сам будет принимать решения и снимать
+                                не все подряд с одинаковым качеством, а сразу анализировать данные и самостоятельно
+                                выбирать набор наиболее эффективных для этого случая датчиков и степень детализации
+                                исследования.
+                            </p>
+                            <p>
+                                - Одна из ваших работ посвящена использованию возобновляемых источников энергии для
+                                эксплуатации морских платформ. Насколько ВИЭ эффективны для морских нефтяных терминалов,
+                                в частности черноморских?
+                            </p>
+                            <div class="video-block">
+                                <div class="video-block__wrapper">
+                                    <div class="video-block__inner" data-fancybox="article-video"
+                                        data-src="./files/example-video.mp4">
+
+                                        <img src="./img/video-poster.jpg" alt="">
+                                    </div>
+                                </div>
+                                <span>Проректор по научной работе РГУ нефти и газа (НИУ) им. И. М. Губкина, к. т. н.
+                                    П.К. Калашников</span>
+                            </div>
+                            <div class="article-footer">
+                                <div class="article-footer__like">
+                                    <div class="like-btn">Мне нравится</div>
+                                    <div class="like-counter">
+                                        <span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.24935 7.83333V12.8333M6.24935 7.83333H3.74935C3.52834 7.83333 3.31637 7.92113 3.16009 8.07741C3.00381 8.23369 2.91602 8.44565 2.91602 8.66667V14.5C2.91602 14.721 3.00381 14.933 3.16009 15.0893C3.31637 15.2455 3.52834 15.3333 3.74935 15.3333H5.41602C5.63703 15.3333 5.84899 15.2455 6.00527 15.0893C6.16155 14.933 6.24935 14.721 6.24935 14.5V12.8333M6.24935 7.83333C7.1334 7.83333 7.98125 7.48214 8.60637 6.85702C9.23149 6.2319 9.58268 5.38406 9.58268 4.5V3.66667C9.58268 3.22464 9.75828 2.80072 10.0708 2.48816C10.3834 2.17559 10.8073 2 11.2493 2C11.6914 2 12.1153 2.17559 12.4279 2.48816C12.7404 2.80072 12.916 3.22464 12.916 3.66667V7.83333H15.416C15.858 7.83333 16.282 8.00893 16.5945 8.32149C16.9071 8.63405 17.0827 9.05797 17.0827 9.5L16.2493 13.6667C16.1295 14.1779 15.9022 14.6169 15.6016 14.9175C15.301 15.2181 14.9434 15.364 14.5827 15.3333H8.74935C8.08631 15.3333 7.45042 15.0699 6.98158 14.6011C6.51274 14.1323 6.24935 13.4964 6.24935 12.8333"
+                                                    stroke="#212732" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        4 понравилось
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -590,6 +644,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/select2.min.js"></script>
     <script src="./js/air-datepicker.js"></script>
+    <script src="./js/fancybox.umd.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

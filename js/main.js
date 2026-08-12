@@ -171,3 +171,8 @@ const articleSlider = new Swiper('.article-content__slider-el', {
     },
 
 });
+
+
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});
