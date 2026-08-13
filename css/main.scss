@@ -1692,3 +1692,29 @@ header,
   color: #dc403a;
   width: fit-content;
 }
+
+.article-more {
+  margin-top: 96px;
+  padding: 24px;
+  border-radius: 24px;
+  background: #f4f4f4;
+  h2 {
+    color: #212732;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 41.6px */
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .article-more__list {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+  }
+
+  .article-item {
+    width: calc(25% - 18px);
+  }
+}
