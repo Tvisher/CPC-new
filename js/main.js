@@ -172,7 +172,12 @@ const articleSlider = new Swiper('.article-content__slider-el', {
 
 });
 
-
 Fancybox.bind("[data-fancybox]", {
-    // Your custom options
+    Carousel: {
+        formatCaption: (carouselRef, slide) => {
+            console.log(slide);
+
+            return `${slide.caption ? slide.caption : ''}<a class='caption-link' target='_blank' download href='${slide.src}'>Скачать оригинал</a>`;
+        },
+    },
 });
