@@ -1746,4 +1746,134 @@ header,
   }
 }
 
+.ico-item {
+  position: absolute;
+  width: clamp(1px, 2.75vw, 48px);
+  height: clamp(1px, 2.75vw, 48px);
+  cursor: pointer;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.region-item {
+  cursor: pointer;
+  transition:
+    fill 0.2s ease-in-out,
+    filter 0.2s ease-in-out;
+  &:hover {
+    fill: rgba(152, 224, 255, 0.1);
+    filter: drop-shadow(0 8px 12px rgba(19, 67, 149, 1));
+  }
+}
+
+.geography-map {
+  border-radius: 1.5rem 1.5rem 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.geography-map svg {
+  width: 100%;
+  height: 100%;
+}
+
+[data-ico="1"] {
+  left: 14.8%;
+  top: 50.1%;
+}
+
+[data-ico="2"] {
+  left: 16.2%;
+  top: 56.1%;
+}
+
+[data-ico="3"] {
+  left: 20.2%;
+  top: 50.3%;
+}
+
+[data-ico="4"] {
+  left: 24.2%;
+  top: 46.5%;
+}
+[data-ico="5"] {
+  left: 29.7%;
+  top: 47.5%;
+}
+
+[data-ico="6"] {
+  left: 36%;
+  top: 47.1%;
+}
+
+[data-ico="7"] {
+  left: 40.75%;
+  top: 46.4%;
+}
+
+[data-ico="8"] {
+  left: 50.2%;
+  top: 41.4%;
+}
+
+[data-ico="9"] {
+  left: 55.2%;
+  top: 40.4%;
+}
+
+[data-ico="10"] {
+  left: 64.5%;
+  top: 41.6%;
+}
+
+[data-ico="11"] {
+  left: 65.5%;
+  top: 31.6%;
+}
+
+[data-ico="12"] {
+  left: 68.7%;
+  top: 23.1%;
+}
+
+[data-ico="13"] {
+  left: 71.9%;
+  top: 23.1%;
+}
+
+[data-ico="14"] {
+  left: 78.3%;
+  top: 21.1%;
+}
+
+[data-ico="15"] {
+  left: 83.2%;
+  top: 15%;
+}
+
+[data-ico="16"] {
+  left: 87.5%;
+  top: 14.1%;
+}
+
+[data-ico="17"] {
+  left: 96.8%;
+  top: 27%;
+}
+.blue-icon svg path {
+  transition: all 0.2s ease-in-out;
+}
+.blue-icon svg:hover {
+  path:nth-child(1) {
+    fill: #f5fcff;
+    stroke: #134395;
+  }
+
+  path:nth-child(2),
+  path:nth-child(3) {
+    fill: #134395;
+  }
+}
 @import "./media";
