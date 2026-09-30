@@ -1765,6 +1765,7 @@ header,
 }
 
 .region-item {
+  pointer-events: all !important;
   cursor: pointer;
   transition:
     fill 0.2s ease-in-out,
@@ -1779,6 +1780,9 @@ header,
   border-radius: 24px 24px 0 0;
   overflow: hidden;
   position: relative;
+  path {
+    pointer-events: none;
+  }
 }
 
 .geography-map svg {
@@ -1950,6 +1954,49 @@ header,
 .item-modal__title-ico {
   width: clamp(0.0625rem, 1.64vw, 1.75rem);
   height: clamp(0.0625rem, 1.64vw, 1.75rem);
+}
+[data-item-modal="14"] {
+  bottom: initial;
+  top: clamp(0.0625rem, 4.11vw, 4.375rem);
+  &::before {
+    bottom: initial;
+    top: 0;
+    transform: scaleY(-1) translateY(100%);
+  }
+}
+
+[data-item-modal="15"] {
+  bottom: initial;
+  top: clamp(0.0625rem, 4.11vw, 4.375rem);
+  &::before {
+    bottom: initial;
+    top: 0;
+    transform: scaleY(-1) translateY(100%);
+  }
+}
+
+[data-item-modal="16"] {
+  transform: translateX(-81.7%);
+  bottom: initial;
+  top: clamp(0.0625rem, 4.11vw, 4.375rem);
+  &::before {
+    bottom: initial;
+    top: 0;
+    left: 84.5%;
+    transform: scaleY(-1) translateY(100%);
+  }
+}
+
+[data-item-modal="17"] {
+  transform: translateX(-89.7%);
+  bottom: initial;
+  top: clamp(0.0625rem, 4.11vw, 4.375rem);
+  &::before {
+    bottom: initial;
+    top: 0;
+    left: 92.5%;
+    transform: scaleY(-1) translateY(100%);
+  }
 }
 
 @import "./media";
