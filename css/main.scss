@@ -1968,8 +1968,14 @@ header,
   }
 }
 
-.geography-page .main-wrapper {
-  background-color: #f4f4f4;
+.geography-page {
+  .main-wrapper {
+    background-color: #f4f4f4;
+  }
+
+  .article-more {
+    padding: 0;
+  }
 }
 
 .geography-map {
