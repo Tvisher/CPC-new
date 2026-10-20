@@ -201,9 +201,37 @@
   .article-content__inner {
     padding-left: 0;
   }
+
+  .geography-map__footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .map-footer-col {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
+  .map-inner-line {
+    width: 100%;
+    height: 1px;
+  }
+
+  .map-inner-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .map-inner-col {
+    font-size: 14px;
+  }
+
+  .map-footer-col__title {
+    gap: 12px;
+    font-size: 20px;
+  }
+
   .filter-item {
     width: 100%;
   }
@@ -381,9 +409,23 @@
   .first-screen__slider .swiper-pagination {
     bottom: -42px;
   }
+
+  .geography-map {
+    display: none;
+  }
+
+  .geography-map__mobile,
+  .geography-toggle-list {
+    display: block;
+  }
+
 }
 
 @media (max-width: 576px) {
+  .geography-map__footer {
+    padding: 20px 16px;
+    border-radius: 0 0 12px 12px;
+  }
 
   .article-content__quote,
   .article-content__inner p,
