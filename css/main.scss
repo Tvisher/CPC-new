@@ -2664,12 +2664,13 @@ a.geography-toggle-item__head {
 
 .atmo-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   padding-top: 2.5rem;
 }
 
 .atmo-block {
-  width: calc(33.33% - 1.3125rem);
+  width: calc(33.33% - 1.375rem);
   padding: 1rem 0.75rem;
   border-radius: 1rem;
   border: 0.0625rem solid #CCC;
@@ -2763,6 +2764,83 @@ a.geography-toggle-item__head {
   border-radius: 1rem;
   border: .0625rem solid #ccc;
   background: #fff;
+}
+
+.atmo-block__progress {
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  background: #EEE;
+  width: 100%;
+  display: flex;
+}
+
+.atmo-block__progress-more {
+  width: 1rem;
+  flex-shrink: 0;
+}
+
+.atmo-block__progress-basic {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .progress-line {
+    background: #98DC3A;
+    width: 0;
+    transition: width .5s ease-in-out;
+    height: 100%;
+    border-radius: 0.25rem 0 0 0.25rem;
+
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0.125rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: calc(100% + 0.25rem);
+    background-color: red;
+  }
+}
+
+.atmo-block__footer {
+  display: flex;
+  margin-top: 13px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.atmo-block__data {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.data-item {
+  display: flex;
+  align-items: center;
+}
+
+.atmo-block__data-val {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-size: 14px;
+
+  .inf {
+    cursor: help;
+    color: #134395;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 12%;
+    text-underline-offset: 25%;
+  }
 }
 
 @import "./media";
