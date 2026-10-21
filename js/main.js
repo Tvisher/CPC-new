@@ -79,7 +79,7 @@ $(".nav-menu__item .open-arrow").on("click", function () {
     .parents(".nav-menu__item")
     .find(".nav-menu__submenu-wrapper");
   $(this).toggleClass("open");
-  innerMenu.slideToggle("slow", function () {});
+  innerMenu.slideToggle("slow", function () { });
 });
 
 window.addEventListener("popstate", function (event) {
@@ -178,5 +178,18 @@ $("[data-toggle-item]").on("click", function () {
     .parents(".geography-toggle-item")
     .find(".geography-toggle-item__body");
   $(this).toggleClass("open");
-  innerItem.slideToggle("slow", function () {});
+  innerItem.slideToggle("slow", function () { });
+});
+
+
+
+const ecoinformerSlider = new Swiper(".ecoinformer__slider", {
+  spaceBetween: 24,
+  speed: 800,
+  slidesPerView: 4,
+  loop: 1,
+  navigation: {
+    nextEl: '.ecoinformer__slider-wrapper .swiper-button-next',
+    prevEl: '.ecoinformer__slider-wrapper .swiper-button-prev',
+  },
 });
