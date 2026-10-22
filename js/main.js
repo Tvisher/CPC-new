@@ -193,3 +193,29 @@ const ecoinformerSlider = new Swiper(".ecoinformer__slider", {
     prevEl: '.ecoinformer__slider-wrapper .swiper-button-prev',
   },
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const blocks = document.querySelectorAll('[data-calculation-block]');
+
+  blocks.forEach(block => {
+    const progressLine = block.querySelector('[data-progress-line]');
+    const maxValItem = block.querySelector('[data-max-value]');
+    const limitingValElem = block.querySelector('[data-limiting-value]');
+    const progressMore = block.querySelector('[data-progress-more]')
+    if (!progressLine || !maxValItem || !limitingValElem) return;
+
+    const maxValue = parseFloat(maxValItem.getAttribute('data-max-value'));
+    const limitingValue = parseFloat(limitingValElem.getAttribute('data-limiting-value'));
+
+    if (isNaN(maxValue) || isNaN(limitingValue) || limitingValue === 0) return;
+
+    let percentage = (maxValue / limitingValue) * 100;
+
+    if (percentage > 100) {
+      percentage = 100;
+      progressMore.classList.add('active');
+    }
+    progressLine.style.width = `${percentage}%`;
+  });
+});
