@@ -186,12 +186,25 @@ $("[data-toggle-item]").on("click", function () {
 const ecoinformerSlider = new Swiper(".ecoinformer__slider", {
   spaceBetween: 24,
   speed: 800,
-  slidesPerView: 4,
+  slidesPerView: 1,
   loop: 1,
   navigation: {
     nextEl: '.ecoinformer__slider-wrapper .swiper-button-next',
     prevEl: '.ecoinformer__slider-wrapper .swiper-button-prev',
   },
+  breakpoints: {
+    1280: {
+      slidesPerView: 4,
+    },
+
+    1120: {
+      slidesPerView: 3,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+  }
 });
 
 
