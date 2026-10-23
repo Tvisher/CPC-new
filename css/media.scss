@@ -478,6 +478,10 @@
 }
 
 @media (max-width: 576px) {
+  .atmo-block__footer {
+    gap: 0;
+  }
+
   .first-ecoinformer-block {
     margin-top: 60vw;
   }
