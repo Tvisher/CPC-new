@@ -28,6 +28,10 @@
     font-size: 16px;
   }
 
+  .albums-list .album-item {
+    padding-top: 47.6%;
+  }
+
   .children-talent-block {
     padding-bottom: 100px;
     margin: 50px 0;
@@ -558,6 +562,33 @@
 }
 
 @media (max-width: 576px) {
+
+  .albums-list .album-item {
+    padding-top: 70%;
+  }
+
+  .albums-list .album-item__content {
+    padding: 20px;
+  }
+
+  .album-item__name {
+    font-size: 22px;
+    line-height: 120%;
+  }
+
+  .album-item__date {
+    font-size: 14px;
+  }
+
+  .album-item__footer {
+    margin-top: 16px;
+  }
+
+  .album-item__count-of-photos,
+  .album-item__loc {
+    font-size: 12px;
+  }
+
   .children-talent-block {
     margin: 30px 0;
   }
