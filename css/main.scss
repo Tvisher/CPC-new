@@ -7,7 +7,6 @@
     url("../fonts/Onest-Regular.woff2") format("woff2"),
     url("../fonts/Onest-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -18,7 +17,6 @@
     url("../fonts/Onest-Medium.woff2") format("woff2"),
     url("../fonts/Onest-Medium.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -29,7 +27,6 @@
     url("../fonts/Onest-SemiBold.woff2") format("woff2"),
     url("../fonts/Onest-SemiBold.ttf") format("truetype");
   font-weight: 600;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -40,7 +37,6 @@
     url("../fonts/Onest-Bold.woff2") format("woff2"),
     url("../fonts/Onest-Bold.ttf") format("truetype");
   font-weight: 700;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -125,7 +121,6 @@ body {
   gap: 0.5rem;
   color: #fff;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
   padding: 0.9375rem 1rem;
@@ -164,7 +159,6 @@ body {
     position: absolute;
     color: #fff;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%;
     left: 0;
@@ -201,7 +195,6 @@ body {
   gap: 0.75rem;
   color: #fff;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 150%;
   padding: 1rem;
@@ -333,7 +326,6 @@ body {
 .news-date {
   color: #212732;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
 }
@@ -341,7 +333,6 @@ body {
 .news-tag {
   color: #212732;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
   /* 1.3125rem */
@@ -359,7 +350,6 @@ body {
   border: 0.0625rem solid #ccc;
   color: #212732;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
   /* 1.3125rem */
@@ -457,7 +447,6 @@ body {
 .slider-news__title {
   color: #212732;
   font-size: 3rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 115%;
   /* 3.45rem */
@@ -471,7 +460,6 @@ body {
 .slider-news__text {
   color: #60646b;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
   display: -webkit-box;
@@ -483,7 +471,6 @@ body {
 .slider-news__btn {
   color: #fff;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 130%;
   border-radius: 2.5rem;
@@ -524,7 +511,6 @@ body {
   margin-bottom: 3rem;
   color: #212732;
   font-size: 3.5rem;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
 
@@ -608,7 +594,6 @@ body {
 .article-item__date {
   color: #60646b;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
   margin-bottom: 0.375rem;
@@ -617,7 +602,6 @@ body {
 .article-item__title {
   color: #212732;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 130%;
   margin-bottom: 0.75rem;
@@ -627,7 +611,6 @@ body {
 .article-item__descr {
   color: #60646b;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
@@ -723,7 +706,6 @@ body {
   margin-top: 2.5rem;
   color: #212732;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 150%;
   border-radius: 2.5rem;
@@ -771,7 +753,6 @@ body {
 .footer__nav-item {
   color: #fff;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 150%;
   text-transform: uppercase;
@@ -784,7 +765,6 @@ body {
 .footer__text {
   color: #bbb;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
@@ -816,7 +796,6 @@ body {
   padding-left: 4.5rem;
   position: relative;
   background-color: #F4F4F4;
-
 
   &::before {
     position: absolute;
@@ -913,7 +892,6 @@ body.menu-open {
   padding-left: 4.5rem;
   transform: translateY(-100%);
   opacity: 0;
-
   transition: all 0.3s ease-in-out;
 
   &.show {
@@ -1070,7 +1048,6 @@ header,
 .nav-menu__link {
   color: #212732;
   font-size: 1.5rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 130%;
 }
@@ -1078,7 +1055,6 @@ header,
 .nav-menu__sublink {
   color: #60646b;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
@@ -1125,7 +1101,6 @@ header,
     position: relative;
     color: #212732;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 150%;
     text-decoration-line: underline;
@@ -1189,7 +1164,6 @@ header,
   .select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: #212732;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 150% !important;
   }
@@ -1235,7 +1209,6 @@ header,
   border-top: 0.0625rem solid #ccc;
   color: #212732;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
 }
@@ -1275,7 +1248,6 @@ header,
   background-color: transparent;
   color: #212732;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
 }
@@ -1301,7 +1273,6 @@ header,
 .filter-reset {
   color: #60646b;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
   /* 1.5rem */
@@ -1374,7 +1345,6 @@ header,
 
   .news-date {
     font-size: 1rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 150%;
     margin-left: 1.25rem;
@@ -1384,7 +1354,6 @@ header,
   .info-text {
     color: #212732;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 150%;
   }
@@ -1395,7 +1364,6 @@ header,
   padding-bottom: 6rem;
   color: #212732;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 190%;
   background-color: #fff;
@@ -1409,7 +1377,6 @@ header,
   h3 {
     color: #212732;
     font-size: 1.5rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 170%;
   }
@@ -1417,7 +1384,6 @@ header,
   h4 {
     color: #212732;
     font-size: 1.25rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 170%;
     margin-bottom: 2.5rem;
@@ -1430,7 +1396,6 @@ header,
   h2 {
     color: #212732;
     font-size: 2rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 130%;
     margin-bottom: 2.5rem;
@@ -1439,7 +1404,6 @@ header,
   h5 {
     color: #212732;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 190%;
     margin-bottom: 1.25rem;
@@ -1512,7 +1476,6 @@ header,
     display: block;
     color: #60646b;
     font-size: 0.875rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 170%;
     margin-top: 1rem;
@@ -1588,7 +1551,6 @@ header,
 .quote__body {
   color: #212732;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 170%;
 }
@@ -1683,7 +1645,6 @@ header,
     margin-top: 1rem;
     color: #60646b;
     font-size: 0.875rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 170%;
   }
@@ -1747,7 +1708,6 @@ header,
     margin-top: 1rem;
     color: #60646b;
     font-size: 0.875rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 170%;
   }
@@ -1772,7 +1732,6 @@ header,
     padding: 0.25rem 1rem;
     color: #212732;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 150%;
     border-radius: 2.5rem;
@@ -1782,7 +1741,6 @@ header,
   .like-counter {
     color: #212732;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 150%;
     display: flex;
@@ -1820,7 +1778,6 @@ header,
   h2 {
     color: #212732;
     font-size: 2rem;
-    font-style: normal;
     font-weight: 700;
     line-height: 130%;
     /* 2.6rem */
@@ -1842,7 +1799,6 @@ header,
   padding: 0.25rem 1rem;
   color: #212732;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
   border-radius: 2.5rem;
@@ -1913,7 +1869,6 @@ header,
   transition: all .3s ease-in-out .1s;
   color: #212732;
   font-size: clamp(1px, 0.94vw, 1rem);
-  font-style: normal;
   font-weight: 600;
   line-height: 150%;
 
@@ -2160,7 +2115,6 @@ header,
   gap: clamp(0.0625rem, 0.47vw, 0.5rem);
   color: #212732;
   font-size: clamp(0.0625rem, 1.17vw, 1.25rem);
-  font-style: normal;
   font-weight: 600;
   line-height: 150%;
   margin-bottom: clamp(0.0625rem, 0.47vw, 0.5rem);
@@ -2169,7 +2123,6 @@ header,
 .item-modal__text {
   color: #60646b;
   font-size: clamp(0.0625rem, 0.82vw, 0.875rem);
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
@@ -2257,7 +2210,6 @@ header,
 
   color: #FFF;
   font-size: 2rem;
-  font-style: normal;
   font-weight: 700;
   line-height: 130%;
 }
@@ -2270,7 +2222,6 @@ header,
     display: block;
     color: #FFF;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%;
     text-decoration-line: underline;
@@ -2279,8 +2230,6 @@ header,
 
 .map-inner-col {
   color: rgba(255, 255, 255, 0.60);
-
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
   display: flex;
@@ -2338,7 +2287,6 @@ header,
 .region-object__name {
   color: #212732;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 150%;
   display: flex;
@@ -2359,7 +2307,6 @@ header,
 .region-object__descr {
   color: #60646B;
   font-size: 0.875rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
@@ -2413,7 +2360,6 @@ header,
   align-items: center;
   color: #212732;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
   padding: 12px;
@@ -2488,7 +2434,6 @@ a.geography-toggle-item__head {
   border-top: 0.0625rem solid #CCC;
   color: #212732;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
   position: relative;
@@ -2517,7 +2462,6 @@ a.geography-toggle-item__head {
   .section-descr {
     color: #212732;
     font-size: 1.25rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 170%;
   }
@@ -2695,7 +2639,6 @@ a.geography-toggle-item__head {
 .atmo-block__title {
   color: #212732;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 150%;
   display: flex;
@@ -2722,7 +2665,6 @@ a.geography-toggle-item__head {
 .title-link {
   color: #134395;
   font-size: 1rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
   text-decoration: underline;
@@ -2738,7 +2680,6 @@ a.geography-toggle-item__head {
   .vectior {
     color: #212732;
     font-size: 1.25rem;
-    font-style: normal;
     font-weight: 500;
     line-height: 150%;
     padding: 0.5rem 0.75rem;
@@ -2816,7 +2757,6 @@ a.geography-toggle-item__head {
     transition: width 1s ease-in-out;
     height: 100%;
     border-radius: 0.25rem 0 0 0.25rem;
-
   }
 
   &::after {
@@ -2859,7 +2799,6 @@ a.geography-toggle-item__head {
   .inf {
     cursor: help;
     color: #134395;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%;
     text-decoration-line: underline;
@@ -2982,7 +2921,6 @@ a.geography-toggle-item__head {
     span {
       color: #60646B;
       font-size: 1rem;
-      font-style: normal;
       font-weight: 400;
       line-height: 170%;
     }
@@ -3023,7 +2961,6 @@ a.geography-toggle-item__head {
     margin-bottom: 0;
     color: #212732;
     font-size: 1.25rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 150%;
     margin-bottom: 2rem;
@@ -3129,7 +3066,6 @@ a.geography-toggle-item__head {
 .children-talent-block__title {
   color: #212732;
   font-size: 3.5rem;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
   margin-bottom: 1.25rem;
@@ -3138,7 +3074,6 @@ a.geography-toggle-item__head {
 .children-talent-block__decr {
   color: #212732;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 170%;
   margin-bottom: 2.5rem;
@@ -3155,7 +3090,6 @@ a.geography-toggle-item__head {
   width: 100%;
   color: #FFF;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 150%;
 }
@@ -3190,7 +3124,6 @@ a.geography-toggle-item__head {
   width: 14.0625rem;
   text-align: center;
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 130%;
   color: #212732;
@@ -3204,6 +3137,109 @@ a.geography-toggle-item__head {
     background-color: #134395;
     color: #FFF;
   }
+}
+
+.albums-list {
+  .album-item {
+    height: 0;
+    position: relative;
+    padding-top: 23.6%;
+    overflow: hidden;
+  }
+
+  .album-item__wrapper {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .album-item__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .album-item__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border-radius: 1rem;
+    background: linear-gradient(0deg, rgba(33, 39, 50, 0.60) 0%, rgba(33, 39, 50, 0.00) 100%)
+  }
+}
+
+.album-item__footer {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.album-item__date {
+  color: #FFF;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 170%;
+}
+
+.album-item__name {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.album-item__loc {
+  color: #212732;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 150%;
+  border-radius: 1.5rem;
+  background: #FFF;
+  padding: 0.25rem 0.75rem;
+  padding-left: 1.75rem;
+  background-size: 1.25rem;
+  background-repeat: no-repeat;
+  background-position: left 0.375rem center;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10.001 2.29688C11.3195 2.29689 12.6088 2.68839 13.7051 3.4209C14.8011 4.15337 15.6556 5.19421 16.1602 6.41211C16.6648 7.63026 16.7963 8.97145 16.5391 10.2646C16.2818 11.5576 15.6471 12.7455 14.7149 13.6777L11.1797 17.2139C10.8672 17.5261 10.4427 17.7012 10.001 17.7012C9.55945 17.7011 9.13569 17.5259 8.82327 17.2139L5.28714 13.6777C4.35492 12.7455 3.7192 11.5577 3.46194 10.2646C3.20474 8.97145 3.33723 7.63026 3.84183 6.41211C4.34638 5.1942 5.20083 4.15336 6.2969 3.4209C7.39322 2.68837 8.68248 2.29688 10.001 2.29688ZM10.001 6.46289C9.33797 6.46289 8.70227 6.72647 8.23343 7.19531C7.76459 7.66415 7.50101 8.29985 7.50101 8.96289C7.50101 9.62593 7.76459 10.2616 8.23343 10.7305C8.70227 11.1993 9.33796 11.4629 10.001 11.4629C10.664 11.4629 11.2997 11.1993 11.7686 10.7305C12.2374 10.2616 12.501 9.62593 12.501 8.96289C12.501 8.29985 12.2374 7.66415 11.7686 7.19531C11.2997 6.72647 10.664 6.46289 10.001 6.46289Z' fill-rule='evenodd' clip-rule='evenodd' fill='%23DC403A'/%3e%3c/svg%3e ");
+}
+
+
+.album-item__count-of-photos {
+  color: #FFF;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 0.25rem 1rem;
+  padding-left: 2.5rem;
+  border-radius: 1.5rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.40);
+  width: fit-content;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.16667 5.5H5C5.44203 5.5 5.86595 5.32441 6.17851 5.01184C6.49107 4.69928 6.66667 4.27536 6.66667 3.83333C6.66667 3.61232 6.75446 3.40036 6.91074 3.24408C7.06702 3.0878 7.27899 3 7.5 3H12.5C12.721 3 12.933 3.0878 13.0893 3.24408C13.2455 3.40036 13.3333 3.61232 13.3333 3.83333C13.3333 4.27536 13.5089 4.69928 13.8215 5.01184C14.134 5.32441 14.558 5.5 15 5.5H15.8333C16.2754 5.5 16.6993 5.67559 17.0118 5.98816C17.3244 6.30072 17.5 6.72464 17.5 7.16667V14.6667C17.5 15.1087 17.3244 15.5326 17.0118 15.8452C16.6993 16.1577 16.2754 16.3333 15.8333 16.3333H4.16667C3.72464 16.3333 3.30072 16.1577 2.98816 15.8452C2.67559 15.5326 2.5 15.1087 2.5 14.6667V7.16667C2.5 6.72464 2.67559 6.30072 2.98816 5.98816C3.30072 5.67559 3.72464 5.5 4.16667 5.5ZM7.5 10.5C7.5 11.163 7.76339 11.7989 8.23223 12.2678C8.70107 12.7366 9.33696 13 10 13C10.663 13 11.2989 12.7366 11.7678 12.2678C12.2366 11.7989 12.5 11.163 12.5 10.5C12.5 9.83696 12.2366 9.20107 11.7678 8.73223C11.2989 8.26339 10.663 8 10 8C9.33696 8 8.70107 8.26339 8.23223 8.73223C7.76339 9.20107 7.5 9.83696 7.5 10.5Z' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' stroke='white'/%3e%3c/svg%3e ");
+  background-size: 1.25rem;
+  background-repeat: no-repeat;
+  background-position: left 0.75rem center;
 }
 
 @import "./media";
