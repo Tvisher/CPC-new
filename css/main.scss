@@ -3226,7 +3226,8 @@ a.geography-toggle-item__head {
 }
 
 
-.album-item__count-of-photos {
+.album-item__count-of-photos,
+.album-item__count-of-videos {
   color: #FFF;
   font-size: 0.875rem;
   font-weight: 500;
@@ -3240,6 +3241,32 @@ a.geography-toggle-item__head {
   background-size: 1.25rem;
   background-repeat: no-repeat;
   background-position: left 0.75rem center;
+}
+
+
+
+.children-talent-block__footer {
+  margin-top: 40px;
+  display: flex;
+  padding-top: 20px;
+  gap: 12px;
+  border-top: 1px solid rgba(33, 39, 50, 0.20);
+  flex-wrap: wrap;
+  width: fit-content;
+
+  .tag-item {
+    padding: 4px 12px;
+    color: #212732;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    border-radius: 24px;
+    background: #FFF;
+  }
+}
+
+.safety-block {
+  background-image: url(../img/safety-block-bg.jpg);
 }
 
 @import "./media";
