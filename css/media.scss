@@ -589,8 +589,15 @@
 }
 
 @media (max-width: 576px) {
+  .symphony-item .sp-item__name {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
 
-
+  .sp-item__content {
+    padding: 15px;
+  }
 
   .albums-list .album-item {
     padding-top: 70%;
