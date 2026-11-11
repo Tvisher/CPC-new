@@ -20,6 +20,12 @@
   .atmo-block {
     width: calc(50% - 13px);
   }
+
+  .without-danger-list {
+    .sp-item {
+      width: calc(25% - 23px);
+    }
+  }
 }
 
 @media (max-width: 1120px) {
@@ -279,6 +285,12 @@
 }
 
 @media (max-width: 992px) {
+  .without-danger-list {
+    .sp-item {
+      width: calc(33.33% - 23px);
+    }
+  }
+
   .ecoinformer-block {
     padding: 30px;
   }
@@ -293,6 +305,12 @@
 }
 
 @media (max-width: 768px) {
+  .without-danger-list {
+    .sp-item {
+      width: 100%;
+    }
+  }
+
   .safety-block {
     background-image: url(../img/safety-block-bg-mob.jpg);
     background-position: bottom center;

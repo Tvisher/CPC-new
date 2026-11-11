@@ -3248,21 +3248,21 @@ a.geography-toggle-item__head {
 
 
 .children-talent-block__footer {
-  margin-top: 40px;
+  margin-top: 2.5rem;
   display: flex;
-  padding-top: 20px;
-  gap: 12px;
-  border-top: 1px solid rgba(33, 39, 50, 0.20);
+  padding-top: 1.25rem;
+  gap: 0.75rem;
+  border-top: 0.0625rem solid rgba(33, 39, 50, 0.20);
   flex-wrap: wrap;
   width: fit-content;
 
   .tag-item {
-    padding: 4px 12px;
+    padding: 0.25rem 0.75rem;
     color: #212732;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 150%;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     background: #FFF;
   }
 }
@@ -3270,5 +3270,35 @@ a.geography-toggle-item__head {
 .safety-block {
   background-image: url(../img/safety-block-bg.jpg);
 }
+
+
+.without-danger-list {
+  gap: 3rem 2rem;
+
+  .sp-item {
+    width: calc(20% - 1.625rem);
+  }
+
+  .sp-item__image {
+    padding-top: 153%;
+  }
+
+  .sp-item__name {
+    color: #212732;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.sp-item__num {
+  color: #60646B;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 0.75rem;
+}
+
 
 @import "./media";
