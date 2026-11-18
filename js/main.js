@@ -139,6 +139,8 @@ if (resetFilter) {
       filterParams[key] = key === "date" ? [] : "";
     });
 
+    // надо дописать логику сброса формы поиска...
+
     submitFilters();
   });
 }

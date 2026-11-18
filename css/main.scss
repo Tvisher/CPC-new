@@ -2453,18 +2453,20 @@ a.geography-toggle-item__head {
   }
 }
 
+.section-descr {
+  color: #212732;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 170%;
+}
+
 .ecoinformer-page {
   background-image: url(../img/ecoinformer.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto 20.625rem;
 
-  .section-descr {
-    color: #212732;
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 170%;
-  }
+
 
   .section-title {
     margin-bottom: 1.25rem;
@@ -3298,6 +3300,100 @@ a.geography-toggle-item__head {
   font-weight: 400;
   line-height: 150%;
   margin-bottom: 0.75rem;
+}
+
+.encyclopedia-nav {
+  margin-top: 2.5rem;
+
+  .page-nav__link {
+    width: 21.25rem;
+  }
+}
+
+.letters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem 3.75rem;
+  align-items: flex-start;
+}
+
+.letter-coll {
+  width: calc(33.33% - 2.5rem);
+  display: flex;
+  flex-direction: column;
+
+  .letter-link {
+    display: block;
+  }
+}
+
+.letter-name {
+  color: #134395;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 120%;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.0625rem solid #CCC;
+  margin-bottom: 2.5rem;
+}
+
+.letter-link {
+  color: #212732;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  text-decoration-line: underline;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: #134395;
+  }
+}
+
+.letter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+
+
+
+
+.filter-item__search {
+  width: 100%;
+  height: 100%;
+  border-radius: 4.5rem;
+  background: #fff;
+  box-shadow: 0 0.25rem 1.5rem 0 rgba(177, 177, 177, 0.25);
+  overflow: hidden;
+  position: relative;
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding: 0px 16px;
+    padding-right: 45px;
+  }
+}
+
+.form-search-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+
+
+
+  svg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
 }
 
 
