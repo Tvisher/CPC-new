@@ -2969,6 +2969,12 @@ a.geography-toggle-item__head {
     line-height: 150%;
     margin-bottom: 2rem;
   }
+
+  &.with-location {
+    .sp-item__name {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
 
 .sp-item__image {
@@ -3214,7 +3220,8 @@ a.geography-toggle-item__head {
   line-height: 130%;
 }
 
-.album-item__loc {
+.album-item__loc,
+.sp-item__location {
   color: #212732;
   font-size: 0.875rem;
   font-weight: 500;
@@ -3227,6 +3234,12 @@ a.geography-toggle-item__head {
   background-repeat: no-repeat;
   background-position: left 0.375rem center;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10.001 2.29688C11.3195 2.29689 12.6088 2.68839 13.7051 3.4209C14.8011 4.15337 15.6556 5.19421 16.1602 6.41211C16.6648 7.63026 16.7963 8.97145 16.5391 10.2646C16.2818 11.5576 15.6471 12.7455 14.7149 13.6777L11.1797 17.2139C10.8672 17.5261 10.4427 17.7012 10.001 17.7012C9.55945 17.7011 9.13569 17.5259 8.82327 17.2139L5.28714 13.6777C4.35492 12.7455 3.7192 11.5577 3.46194 10.2646C3.20474 8.97145 3.33723 7.63026 3.84183 6.41211C4.34638 5.1942 5.20083 4.15336 6.2969 3.4209C7.39322 2.68837 8.68248 2.29688 10.001 2.29688ZM10.001 6.46289C9.33797 6.46289 8.70227 6.72647 8.23343 7.19531C7.76459 7.66415 7.50101 8.29985 7.50101 8.96289C7.50101 9.62593 7.76459 10.2616 8.23343 10.7305C8.70227 11.1993 9.33796 11.4629 10.001 11.4629C10.664 11.4629 11.2997 11.1993 11.7686 10.7305C12.2374 10.2616 12.501 9.62593 12.501 8.96289C12.501 8.29985 12.2374 7.66415 11.7686 7.19531C11.2997 6.72647 10.664 6.46289 10.001 6.46289Z' fill-rule='evenodd' clip-rule='evenodd' fill='%23DC403A'/%3e%3c/svg%3e ");
+}
+
+.sp-item__location {
+  border: 1px solid #CCC;
+  width: fit-content;
+  margin-bottom: 2rem;
 }
 
 
